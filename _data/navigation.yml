@@ -1,0 +1,31 @@
+main:
+  - title: "홈"
+    url: /
+  - title: "프로젝트"
+    url: /projects/
+  - title: "학습"
+    children:
+      - title: "IT"
+        url: /categories/#it
+      - title: "Finance"
+        url: /categories/#finance
+      - title: "Satellite"
+        url: /categories/#satellite
+  - title: "English"
+    url: /en/
+
+en:
+  - title: "Home"
+    url: /en/
+  - title: "Projects"
+    url: /en/projects/
+  - title: "Study"
+    children:
+      - title: "IT"
+        url: /en/categories/#it
+      - title: "Finance"
+        url: /en/categories/#finance
+      - title: "Satellite"
+        url: /en/categories/#satellite
+  - title: "한국어"
+    url: / 

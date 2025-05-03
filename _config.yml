@@ -1,0 +1,83 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: 나의 포트폴리오 # 사이트 제목
+description: 개인 학습 기록 및 프로젝트 포트폴리오 아카이브 # 사이트 설명
+baseurl: "" # GitHub Pages 프로젝트 사이트의 경우 /repository-name 과 같이 설정
+url: "" # GitHub Pages 사용자/조직 사이트의 경우 https://username.github.io 와 같이 설정
+locale: "ko-KR"
+
+# Minimal Mistakes Theme settings
+minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Author settings
+author:
+  name             : "Your Name" # 작성자 이름
+  avatar           : "/assets/images/bio-photo.jpg" # 프로필 이미지 경로 (추후 추가 필요)
+  bio              : "간단한 자기소개"
+  location         : "Seoul, South Korea"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:your.email@example.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/your-username"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/your-profile"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Defaults
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      lang: "ko"
+      permalink: /:categories/:title/
+  - scope:
+      path: "en/_posts"
+      type: posts
+    values:
+      layout: post
+      lang: "en"
+      permalink: /en/:categories/:title/
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: project
+      lang: "ko"
+  - scope:
+      path: "en/_projects"
+      type: projects
+    values:
+      layout: project
+      lang: "en"
+
+# Remote theme
+remote_theme: mmistakes/minimal-mistakes 
