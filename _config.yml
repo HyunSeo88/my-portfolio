@@ -22,8 +22,8 @@ locale: "ko-KR"
 
 # Minimal Mistakes Theme settings
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-theme: minimal-mistakes-jekyll # Gem-based theme
-# remote_theme: mmistakes/minimal-mistakes # Remote theme (use if gem-based fails)
+# theme: minimal-mistakes-jekyll # Gem-based theme
+remote_theme: mmistakes/minimal-mistakes # Remote theme
 
 # Author settings
 author:
