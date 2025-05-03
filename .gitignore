@@ -1,0 +1,15 @@
+# Jekyll build output
+_site/
+
+# Jekyll cache
+.jekyll-cache/
+
+# Other caches
+.sass-cache/
+.jekyll-metadata
+
+# Gemfile lock file differences (if generated)
+Gemfile.lock
+
+# Optional User files
+.DS_Store 

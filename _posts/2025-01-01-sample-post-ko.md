@@ -3,6 +3,7 @@ title: "샘플 포스트"
 date: 2025-01-01
 categories: [Study, IT]
 tags: [Jekyll, Sample]
+layout: single
 ---
 
 이것은 샘플 블로그 포스트입니다.

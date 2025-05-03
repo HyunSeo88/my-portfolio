@@ -3,6 +3,7 @@ title: "Sample Post"
 date: 2025-01-01
 categories: [Study, IT]
 tags: [Jekyll, Sample]
+layout: single
 ---
 
 This is a sample blog post.
