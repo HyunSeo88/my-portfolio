@@ -4,7 +4,8 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-// Custom styles
+// Custom styles added below
+// =============================================================================
 
 // 사이드바와 메인 콘텐츠 경계선 추가
 .sidebar {
