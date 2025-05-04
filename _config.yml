@@ -27,17 +27,17 @@ theme: minimal-mistakes-jekyll # Gem-based theme
 
 # Author settings
 author:
-  name             : "Your Name" # 작성자 이름
+  name             : "임현서" # 작성자 이름
   avatar           : "/assets/images/bio-photo.jpg" # 프로필 이미지 경로 (추후 추가 필요)
   bio              : "간단한 자기소개"
   location         : "Seoul, South Korea"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.email@example.com"
+      url: "mailto:dlauniv@seoultech.ac.kr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/your-username"
+      url: "https://github.com/HyunSeo88"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/your-profile"
