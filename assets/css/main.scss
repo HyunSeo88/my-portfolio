@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+// Import partials from `_sass` (defaults)
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// Custom styles
+
+// 사이드바와 메인 콘텐츠 경계선 추가
+.sidebar {
+  border-right: 1px solid $border-color; // 테마의 기본 경계선 색상 변수 사용
+}
+
+// 사이드바 정보 하단으로 이동 (아바타 제외)
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author__avatar {
+  order: 1; // 아바타를 첫 번째 순서로
+  margin-bottom: 1em; // 아바타와 정보 사이 간격 추가
+}
+
+.author__content {
+  order: 2; // 작성자 정보를 두 번째 순서로
+} 
