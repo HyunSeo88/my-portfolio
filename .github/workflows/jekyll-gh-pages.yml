@@ -31,7 +31,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Gemfile.lock에 명시된 Ruby 버전 또는 호환 버전으로 설정
+          ruby-version: '3.2' # Gemfile.lock에 명시된 Ruby 버전 또는 호환 버전으로 설정
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       - name: Setup Pages
         id: pages
