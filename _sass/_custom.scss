@@ -1,14 +1,4 @@
-@charset "utf-8";
-
-// Import partials from `_sass` (defaults)
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
-
-// Import custom styles
-@import "custom";
-
-// Custom styles added below
-// =============================================================================
+// Custom styles moved from main.scss
 
 // 사이드바와 메인 콘텐츠 경계선 추가
 .sidebar {
