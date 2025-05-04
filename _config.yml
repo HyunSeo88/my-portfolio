@@ -22,8 +22,8 @@ locale: "ko-KR"
 
 # Minimal Mistakes Theme settings
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-theme: minimal-mistakes-jekyll # Gem-based theme
-# remote_theme: mmistakes/minimal-mistakes # Remote theme
+theme: null
+remote_theme: "mmistakes/minimal-mistakes"
 
 # Author settings
 author:
@@ -52,6 +52,7 @@ permalink: pretty
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Collections
 collections:
