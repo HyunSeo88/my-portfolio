@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    {% unless page.header.overlay_color or page.header.overlay_image %}
+      <h1 id="page-title" class="page__title">{{ page.title | default: site.title | default: "Home" }}</h1>
+    {% endunless %}
+
+    <h2 class="archive__subtitle">최근 게시물</h2>
+    {% assign empty_array = "" | split: "" %}
+    {% assign posts_col = site.posts | default: empty_array %}
+    {% assign study_col = site.study | default: empty_array %}
+    {% assign all_docs = posts_col | concat: study_col | sort: 'date' | reverse %}
+    {% for post in all_docs limit:5 %}
+      {% include archive-single.html %}
+    {% endfor %}
+
+    <!-- Optionally, add a link to the full archive -->
+    <p><a href="{{ site.baseurl }}/year-archive/">모든 게시물 보기</a></p>
+
+  </div>
+</div> 

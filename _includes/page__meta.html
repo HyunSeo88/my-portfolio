@@ -1,0 +1,10 @@
+<p class="page__meta">
+  {% assign document = post | default: page %}
+  {% assign include_collection = include.collection | default: document.collection %}
+
+  {% if include.type == "grid" %}
+    {% include page__meta-grid.html %}
+  {% elsif include.type == "list" or include.type == null %}
+    {% include page__meta-list.html %}
+  {% endif %}
+</p> 

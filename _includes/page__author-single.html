@@ -1,0 +1,8 @@
+{% assign author = include.author | default: page_author %}
+{% assign author_profile = site.data.authors[author] | default: author %}
+
+{% if author_profile.name %}
+  <span class="page__meta-author">
+    <i class="fas fa-fw fa-user" aria-hidden="true"></i> <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ author_profile.name }}</span></span>
+  </span>
+{% endif %} 

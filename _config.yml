@@ -21,9 +21,9 @@ url: "https://HyunSeo88.github.io/my-portfolio" # GitHub Pages 프로젝트 사�
 locale: "ko-KR"
 
 # Minimal Mistakes Theme settings
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-theme: null
-remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "aqua" #qua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+theme: "minimal-mistakes-jekyll"
+# remote_theme: "mmistakes/minimal-mistakes"
 
 # Author settings
 author:
@@ -59,6 +59,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  study:
+    output: true
+    permalink: /study/:path/
 
 # Defaults
 defaults:
@@ -87,4 +90,10 @@ defaults:
       type: projects
     values:
       layout: project # 기본 프로젝트 레이아웃 지정
-      lang: "en" 
+      lang: "en"
+  - scope:
+      path: "_study"
+      type: study
+    values:
+      layout: page # 기본 스터디 레이아웃 지정
+      lang: "ko" 

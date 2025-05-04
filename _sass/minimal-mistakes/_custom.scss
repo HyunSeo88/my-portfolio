@@ -70,4 +70,23 @@
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
   padding: 2.5rem 2rem;
   margin: 2rem 0;
+}
+
+/* Custom styles for recent post list items */
+.archive {
+  .list__item {
+    article.archive__item { // Target the inner article element
+      border: 2px solid black !important; // Use a visible color and !important for testing
+      padding: 1.5em !important;
+      margin-bottom: 1.5em !important;
+      border-radius: 8px !important;
+      background-color: white !important; // Add background color for visibility
+    }
+
+    // Remove previous border rules on .list__item itself if they exist
+    // border: none;
+    // padding: 0;
+    // margin-bottom: 0;
+    // border-radius: 0;
+  }
 } 

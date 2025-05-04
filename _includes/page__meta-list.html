@@ -1,0 +1,20 @@
+{% assign document = post | default: page %}
+{% assign author = document.author | default: document.authors[0] | default: site.author %}
+{% assign author = site.data.authors[author] | default: author %}
+
+{% if document.date %}
+  <span class="page__meta-date">
+    <i class="far {% if include.type == 'grid' %}fa-fw {% endif %}fa-calendar-alt" aria-hidden="true"></i>
+    <time datetime="{{ document.date | date_to_xmlschema }}">{{ document.date | date: site.date_format | default: "%B %-d, %Y" }}</time>
+  </span>
+{% endif %}
+
+{% assign page_author = author %}
+{% include page__author-single.html %}
+
+{% if document.read_time %}
+  <span class="page__meta-readtime">
+    <i class="far {% if include.type == 'grid' %}fa-fw {% endif %}fa-clock" aria-hidden="true"></i>
+    {% include read-time.html %}
+  </span>
+{% endif %} 
