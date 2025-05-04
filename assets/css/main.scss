@@ -12,7 +12,8 @@
 }
 
 // 사이드바 정보 하단으로 이동 (아바타 제외)
-.author {
+// itemscope 속성을 가진 div를 Flex 컨테이너로 지정
+.sidebar > [itemscope*="Person"] {
   display: flex;
   flex-direction: column;
 }
@@ -23,5 +24,9 @@
 }
 
 .author__content {
-  order: 2; // 작성자 정보를 두 번째 순서로
+  order: 2; // 작성자 내용을 두 번째 순서로
+}
+
+.author__urls-wrapper {
+  order: 2; // 작성자 링크도 두 번째 순서로 (내용과 함께 아래로)
 } 
